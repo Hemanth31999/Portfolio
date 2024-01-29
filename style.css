@@ -1,25 +1,82 @@
-body{
+body {
     background-color: rgb(40, 64, 85);
+    margin: 0;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-.container{
+.container {
     display: flex;
 }
 
-.right{
-    height: 100%;
-    width: 100%;
-    margin-left: 30%;
+.left {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    background-color: rgb(40, 64, 85);
+    color: rgb(110, 195, 224);
+    z-index: 1; /* Ensure left div is in front */
 }
 
-.left{
-    width: 30%;
-    height: 100%;
-    position: fixed;
-} 
+.right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    margin-left: 30%; /* Adjusted margin to avoid overlap */
+}
+
+.inside-left {
+    margin: 20px;
+    text-align: center;
+}
+
+#profilephoto {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#name {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Soft{
+    margin-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        z-index: initial; /* Reset z-index for smaller screens */
+    }
+
+    .right {
+        flex: 1;
+        width: 100%;
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+}
