@@ -25,7 +25,7 @@ body {
 
 .right {
     flex: 1;
-    padding: 20px;
+    padding: 17px;
     box-sizing: border-box;
     color: white;
     margin-left: 30%; /* Adjusted margin to avoid overlap */
@@ -55,10 +55,104 @@ body {
 }
 
 #Soft{
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+.icons {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-evenly; /* Evenly spaced icons */
+}
+
+.icons a {
+    text-decoration: none; /* Remove underlines from links */
+    color: inherit; /* Inherit text color */
+    font-size: 24px; /* Adjust the size as needed */
+    transition: color 0.3s ease; /* Add a smooth transition effect */
+
+}
+
+.icons i {
+    margin: 0 10px; /* Add space around each icon */
+}
+
+.icons a:hover i {
+    color: white; /* Change to the desired color on hover (LinkedIn blue as an example) */
+}
+
+
+/* Optional: Remove underline on hover */
+.link:hover {
+    text-decoration: none;
+}
+
+
+/* Optional: Remove underline on hover */
+.link:hover {
+    text-decoration: none;
+}
+
+
+/*download Buttons*/
+
+.download{
+    margin-top: 25px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+.download .b {
+    text-indent: -70px; /* adjust the value to your liking */
+}
+
+.link:hover {
+    color: rgb(110, 195, 224);
+}
+
+
+/*Right Side*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+  
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 90px; /* Adjust the spacing between links */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #66c2ff; /* Change the color on hover */
+}
+
+
+
+
+
+
+
+
 
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
