@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'block' : 'none';
+
+            var hamburger = document.querySelector('.hamburger');
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
 
 </head>
+
 <body>
     <div class="container">
         <div class="left">
 
             <div class="inside-left">
-                <img  id="profilephoto" src="/assets/profile.jpeg" alt="Hemanth Profile">
+                <img id="profilephoto" src="/assets/profile.jpeg" alt="Hemanth Profile">
                 <h1 id="name">Hemanth Kumar</h1>
                 <h2 id="Soft">Software Developer</h2>
-            
+
                 <br>
                 <div class="icons">
-               <a href="https://www.linkedin.com/in/hemanth-kumar-72519a220" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-               </a>
-               <a href="https://github.com/Hemanth31999" target="_blank">
-                <i class="fa-brands fa-github"></i>
-               </a>
-               <a href="https://www.instagram.com/hemanth____kumar3?igsh=MXB0ZjFxcjcyYW9raQ%3D%3D&utm_source=qr" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-               </a></div>
-               
-               <div class="download">
-                <div class="a"><a class="link" href="assets/Hemanth_Rachapally_Resume.pdf" download>Download CV</a></div>
-                <div class="b"><a class="link" href="mailto:rachapallyhemanth3@gmail.com">Email</a></div>
-            </div>
+                    <a href="https://www.linkedin.com/in/hemanth-kumar-72519a220" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Hemanth31999" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hemanth____kumar3?igsh=MXB0ZjFxcjcyYW9raQ%3D%3D&utm_source=qr"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></div>
+
+                <div class="download">
+                    <div class="a"><a class="link" href="assets/Hemanth_Rachapally_Resume.pdf" download>Download CV</a>
+                    </div>
+                    <div class="b"><a class="link" href="mailto:rachapallyhemanth3@gmail.com">Email</a></div>
+                </div>
             </div>
         </div>
         <div class="right">
-            <header>
+            <header> <button class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
                 <nav>
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
@@ -48,9 +65,56 @@
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact Me</a>
                 </nav>
-            </header>    
+            </header>
+            <!--About Section -->
+            <section id="about">
+                <p class="Headline">Hi I am Hemanth Kumar. I am looking for a challenging position as a Software
+                    Developer, leveraging my extensive experience and adaptable nature to contribute to an innovative
+                    organization. I am committed to continuous learning and growth, eagerly seeking new problems to
+                    solve and technologies to master while making a significant impact on the company's objectives. </p>
+
+                <!-- Table-->
+                   
+                <div class="info-container">
+                    <div class="info-item">
+                        <span id="sides">Name:</span> Hemanth Kumar
+                    </div>
+                    <div class="info-item">
+                        <span id="sides">Degree:</span> Masters in Computer Science
+                    </div>
+                    <div class="info-item">
+                        <span id="sides">Location:</span> Wichita, Kansas
+                    </div>
+                    <div class="info-item">
+                        <span id="sides">Birthday:</span> January 3, 1999
+                    </div>
+                    <div class="info-item">
+                        <span id="sides">Email:</span> rachapallyhemanth3@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <span id="sides">Phone:</span> (316)-372-6674
+                    </div>
+                </div>
+                
+
+
+                
+            </section>
+
+
+
+
+
+
+
+
+
+                
+
+
+            </div>
         </div>
-    </div>
-    
+
 </body>
+
 </html>
