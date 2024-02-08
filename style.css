@@ -409,13 +409,32 @@ footer a:hover{
 }
 
 
-
+/*  Projects.html */
 .project-div {
     margin-top: 20px;
     
     display: flex;
     justify-content: center; /* Center horizontally */
+
 }
+.project-in{
+    margin: 2%;
+    color: white;
+    
+        line-height: 1.25; 
+        text-align: justify;
+}
+
+.project-in a{
+    color: white;
+}
+
+
+
+
+
+
+
 
 
 
